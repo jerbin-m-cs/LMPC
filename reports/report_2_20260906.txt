@@ -1,0 +1,25 @@
+============================================================
+LEGAL METROLOGY COMPLIANCE REPORT
+============================================================
+
+Scan ID: 2
+Date: 2026-09-06 05:44:46.309114
+Product: by Tz —— =
+Verdict: NON-COMPLIANT
+
+----------------------------------------
+EXTRACTED FIELDS
+----------------------------------------
+MRP: Not found
+Net Quantity: Not found
+MFG Date: Not found
+Expiry Date: Not found
+Consumer Care: 1800103194
+
+----------------------------------------
+VIOLATIONS
+----------------------------------------
+[CRITICAL] R1_MRP: mrp is required but not found
+[CRITICAL] R2_NET_QUANTITY: net_quantity is required but not found
+[CRITICAL] R3_MFG_DATE: mfg_date is required but not found
+[CRITICAL] R4_EXP_DATE: exp_date is required but not found

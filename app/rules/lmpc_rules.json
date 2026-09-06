@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "R1_MRP",
+      "field": "mrp",
+      "description": "Maximum Retail Price must be declared",
+      "severity": "critical",
+      "validation": {
+        "type": "required",
+        "pattern": "\\d+[\\.]?\\d*"
+      }
+    },
+    {
+      "id": "R2_NET_QUANTITY",
+      "field": "net_quantity",
+      "description": "Net quantity must be declared",
+      "severity": "critical",
+      "validation": {
+        "type": "required",
+        "pattern": "\\d+\\s*(g|kg|ml|l|gm|gms)"
+      }
+    },
+    {
+      "id": "R3_MFG_DATE",
+      "field": "mfg_date",
+      "description": "Manufacturing date must be declared",
+      "severity": "critical",
+      "validation": {
+        "type": "required",
+        "pattern": "\\d{2}/\\d{2}/\\d{4}|\\d{2}-\\d{2}-\\d{4}"
+      }
+    },
+    {
+      "id": "R4_EXP_DATE",
+      "field": "exp_date",
+      "description": "Expiry date must be declared",
+      "severity": "critical",
+      "validation": {
+        "type": "required",
+        "pattern": "\\d{2}/\\d{2}/\\d{4}|\\d{2}-\\d{2}-\\d{4}"
+      }
+    },
+    {
+      "id": "R5_CONSUMER_CARE",
+      "field": "consumer_care",
+      "description": "Consumer care contact should be provided",
+      "severity": "warning",
+      "validation": {
+        "type": "recommended",
+        "pattern": "\\d{10}"
+      }
+    },
+    {
+      "id": "R6_MANUFACTURER",
+      "field": "manufacturer",
+      "description": "Manufacturer name and address should be declared",
+      "severity": "warning",
+      "validation": {
+        "type": "recommended",
+        "min_length": 10
+      }
+    },
+    {
+      "id": "R7_COUNTRY_OF_ORIGIN",
+      "field": "country_of_origin",
+      "description": "Country of origin should be declared",
+      "severity": "warning",
+      "validation": {
+        "type": "recommended",
+        "pattern": "(India|USA|China|UK|Germany|France|Japan)"
+      }
+    }
+  ]
+}
